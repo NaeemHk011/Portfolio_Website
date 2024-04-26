@@ -1,33 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer components {
+  .nav-link {
+    @apply relative font-semibold text-white cursor-pointer text-[17px] w-fit md:block after:block after:content-[''] after:absolute after:h-[3px] after:bg-yellow-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center hidden
   }
+
+  .nav-link-mobile {
+    @apply relative mb-[2rem] font-semibold text-white cursor-pointer text-[27px] w-fit md:block after:block after:content-[''] after:absolute after:h-[3px] after:bg-yellow-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center
+  }
+
+  .heading {
+    @apply text-center text-white text-[28px] sm:text-[33px] md:text-[45px] font-bold uppercase
+  }
+
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    font-family: 'Poppins', sans-serif; /* Use Poppins as the primary font */
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* Global styles
+/* For screens smaller than 768px */
+/* @media (max-width: 767px) {
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 50;
+      background-color: #141c27;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  
+    .navbar .container {
+      padding: 0 16px;
+    }
+  
+    .navbar .flex {
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .navbar h1 {
+      font-size: 1.5rem;
+      color: #fff;
+      font-weight: bold;
+    }
+  
+    .navbar .md\\:hidden {
+      display: block;
+    }
+  
+    .navbar .md\\:flex {
+      display: none;
+    }
+  
+    .navbar .md\\:static {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #141c27;
+      padding: 8px 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  
+    .navbar .md\\:static a {
+      display: block;
+      padding: 8px 16px;
+      color: #fff;
+      text-decoration: none;
+    }
+  
+    .navbar .md\\:static a:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
 }
+
+/* For screens between 768px and 1024px */
+/* @media (min-width: 768px) and (max-width: 1024px) {
+  .navbar .md\\:hidden {
+    display: none;
+  }
+
+  .navbar .md\\:flex {
+    display: flex;
+  }
+} */ 
