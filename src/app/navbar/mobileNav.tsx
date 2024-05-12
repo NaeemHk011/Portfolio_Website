@@ -1,4 +1,4 @@
-import { XMarkIcon } from '@heroicons/react/16/solid'
+import { XMarkIcon } from '@heroicons/react/24/solid'
 import React from 'react'
 
 interface Props {

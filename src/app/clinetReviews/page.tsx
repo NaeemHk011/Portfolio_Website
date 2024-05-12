@@ -1,4 +1,4 @@
-import { StarIcon } from '@heroicons/react/16/solid'
+import { StarIcon } from '@heroicons/react/24/solid'
 import Image from 'next/image'
 import React from 'react'
 
