@@ -13,7 +13,7 @@ const About = () => {
           </h2>
           <div className='mb-[3rem] flex items-center md:space-x-10'>
             <span className='w-[100px] hidden md:block h-[5px] bg-slate-400 rounded-sm'></span>
-            <p className='text-[19px] text-slate-300 w-[40%]'>Crafting engaging websites, I'm Naeem, a web developer passionate about turning visions into digital realities. Let's collaborate to bring your ideas to life!.</p>
+            <p className='text-[19px] text-slate-300 w-[40%] flex'>Crafting engaging websites, I'm Naeem, a web developer passionate about turning visions into digital realities. Let's collaborate to bring your ideas to life!.</p>
           </div>
           <button
             id='hireMeButton'
