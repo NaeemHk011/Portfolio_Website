@@ -8,7 +8,6 @@ import About from '@/app/about/page'
 import Services from '@/app/services/page'
 import Skils from '@/app/skills/page'
 import Projects from '@/app/projects/page'
-import Testimonial from '@/app/testimonial/page';
 import Footer from '@/app/footer/page';
 import Navbar from '@/app/navbar/page';
 
@@ -47,9 +46,8 @@ const Page = () => {
         <Services />
         <Skils />
         <Projects />
-        <Testimonial />
         <Footer />
-        
+
       </div>
     </div>
   )
