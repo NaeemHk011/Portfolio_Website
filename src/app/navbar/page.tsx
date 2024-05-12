@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { Link } from 'react-scroll';
-import { Bars3Icon } from "@heroicons/react/16/solid";
+
 import MobileNav from '@/app/navbar/mobileNav'; // Assuming MobileNav is in a separate file
+import { Bars3Icon } from "@heroicons/react/24/solid";
+
 
 interface Props {
     openNav: () => void;
