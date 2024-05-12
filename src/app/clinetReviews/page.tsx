@@ -8,7 +8,7 @@ interface Props {
     image: string
 }
 
-const ClientReviews = ({ name, role, image }: Props) => {
+export const ClientReviews = ({ name, role, image }: Props) => {
     return (
         <div id="clientReviews" className='flex flex-col text-center justify-center'>
             <Image src={image}
@@ -38,4 +38,4 @@ const ClientReviews = ({ name, role, image }: Props) => {
     )
 }
 
-export default ClientReviews;
+

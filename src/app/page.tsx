@@ -49,6 +49,7 @@ const Page = () => {
         <Projects />
         <Testimonial />
         <Footer />
+        
       </div>
     </div>
   )
