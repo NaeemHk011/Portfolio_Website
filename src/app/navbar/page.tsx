@@ -26,7 +26,6 @@ const Navbar = ({ openNav }: Props) => {
                             <Link to="services" spy={true} smooth={true} offset={-70} duration={500} className="nav-link text-white hover:text-yellow-300">SERVICES</Link>
                             <Link to="projects" spy={true} smooth={true} offset={-70} duration={500} className="nav-link text-white hover:text-yellow-300">PROJECTS</Link>
                             <Link to="clientReviews" spy={true} smooth={true} offset={-70} duration={500} className="nav-link text-white hover:text-yellow-300">REVIEWS</Link>
-                            <Link to="blog" spy={true} smooth={true} offset={-70} duration={500} className="nav-link text-white hover:text-yellow-300">BLOG</Link>
                         </div>
                         <div className="md:hidden">
                             <Bars3Icon className="w-6 h-6 text-yellow-300 cursor-pointer" onClick={toggleNav} />
