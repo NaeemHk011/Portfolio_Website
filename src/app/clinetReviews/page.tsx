@@ -1,3 +1,4 @@
+'use client'
 import { StarIcon } from '@heroicons/react/24/solid'
 import Image from 'next/image'
 import React from 'react'
@@ -8,7 +9,7 @@ interface Props {
     image: string
 }
 
-export const ClientReviews = ({ name, role, image }: Props) => {
+const ClientReviews = ({ name, role, image }: Props) => {
     return (
         <div id="clientReviews" className='flex flex-col text-center justify-center'>
             <Image src={image}
@@ -37,5 +38,7 @@ export const ClientReviews = ({ name, role, image }: Props) => {
         </div>
     )
 }
+
+export default ClientReviews
 
 
