@@ -6,11 +6,11 @@ import MobileNav from '@/app/navbar/mobileNav'; // Assuming MobileNav is in a se
 import { Bars3Icon } from "@heroicons/react/24/solid";
 
 
-interface Props {
-    openNav: () => void;
-}
+// interface Props {
+//     openNav: () => void;
+// }
 
-const Navbar = ({ openNav }: Props) => {
+const Navbar = () => {
     const [navOpen, setNavOpen] = useState(false);
 
     const toggleNav = () => {
@@ -18,7 +18,7 @@ const Navbar = ({ openNav }: Props) => {
     };
 
     return (
-        <>
+        <main>
             <div className="w-full fixed top-0 left-0 z-50 bg-[#141c27] shadow-md">
                 <div className="container mx-auto">
                     <div className="flex items-center justify-between flex-wrap h-14">
@@ -37,7 +37,7 @@ const Navbar = ({ openNav }: Props) => {
                 </div>
             </div>
             {navOpen && <MobileNav nav={navOpen} closeNav={toggleNav} />}
-        </>
+        </main>
     );
 }
 

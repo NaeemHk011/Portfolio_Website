@@ -13,7 +13,7 @@ import Navbar from '@/app/navbar/page';
 
 const Page = () => {
   const [nav, setNav] = useState(false)
-  const openNav = () => setNav(true);
+  const openNav = () => { setNav(true) };
   const closeNav = () => setNav(false);
 
   useEffect(() => {
@@ -38,7 +38,7 @@ const Page = () => {
 
   return (
     <div>
-      <Navbar openNav={openNav} />
+      <Navbar />
       {/* <MobileNav /> */}
       <Hero />
       <div className='relative z-[30]'>
