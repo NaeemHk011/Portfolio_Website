@@ -38,7 +38,7 @@ const Page = () => {
 
   return (
     <div>
-      <Navbar />
+
       {/* <MobileNav /> */}
       <Hero />
       <div className='relative z-[30]'>

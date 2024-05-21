@@ -23,6 +23,7 @@
     "react-responsive-carousel": "^3.2.23",
     "react-scroll": "^1.9.0",
     "react-sheet": "^0.0.90",
+    "react-toastify": "^10.0.5",
     "react-tsparticles": "^2.12.2",
     "react-type-animation": "^3.2.0",
     "tailwind-merge": "^2.3.0",

@@ -10,7 +10,7 @@ const Projects = () => {
             <div className='w-[80%] pt-[2rem] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2rem]'>
 
                 <div>
-                    <a href="https://github.com/NaeemHk011/Project_OOP_Bank" target="_blank" rel="noopener noreferrer">
+                    <a href="https://xfashion-shop.vercel.app/" target="_blank" rel="noopener noreferrer">
                         <div data-aos='fade-up' data-aos-delay='500' className='transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[200px] md:h-[300px] '>
                             <Image src="/images/p1.jpg" alt="portfolio" layout="fill" className="object-contain" />
                         </div>
